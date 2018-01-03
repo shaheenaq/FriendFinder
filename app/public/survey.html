@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>FriendFinder Home Page</title>
+	<title>FriendFinder Survey Page</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-	<div class="container">
-		<h2>Survey Questions</h2>
+	<div class="container" id="surveyContainer">
+		<h1>Survey Questions</h1>
 		<hr>
-		<form role="form">
+		<form role="form" id="surveyForm">
 		<h3><strong>About You</strong></h3>
 		<div class="form-group">
 		<label for="name"><h4>Name (Required)</h4></label>
-		<input type="text" class="form-control" id="name">
+		<input type="text" class="form-control" id="name" placeholder="Name...">
 		</div>
 		
 		<div class="form-group">
@@ -25,26 +26,269 @@
 		<input type="text" class="form-control" id="photo">
 		</div>
 		<hr>
+		
 		<div class="form-group">
 			<h3>Question 1</h3>
-			<label for="q1"><h4>You like the outdoors, walking everyday.</h4></label>
+			<label for="q1"><h4>Do you like living in an organized and clean environment?</h4></label>
 			<div class="row">
-			<div class="col-xs-4">
-			<select class="form-control" placeholder="Select an Option">
-				<option>1(strongly disagree)</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5(strongly agree)</option>
-
-			</select>
+				<div class="col-md-4">
+					<select class="form-control" id="q1">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
 			</div>
 		</div>
+		<div class="form-group">
+			<h3>Question 2</h3>
+			<label for="q2"><h4>Do you like to read books by the fireplace, for hours?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q2">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
 		</div>
-	</form>
+		<div class="form-group">
+			<h3>Question 3</h3>
+			<label for="q3"><h4>Do you like to cook and enjoy being a foodie?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q3">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<h3>Question 4</h3>
+			<label for="q4"><h4>Do you get bored with order and routine?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q4">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<h3>Question 5</h3>
+			<label for="q5"><h4>Do you enjoy creativity and music?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q5">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<h3>Question 6</h3>
+			<label for="q6"><h4>Do you enjoy social interaction and being in the company of others?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q6">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<h3>Question 7</h3>
+			<label for="q7"><h4>Do you value loyalty and are aware of other peoples feelings?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q7">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<h3>Question 8</h3>
+			<label for="q8"><h4>Do you value intelligence and logical thinking?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q8">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<h3>Question 9</h3>
+			<label for="q9"><h4>Do you take life one day at time and not worry about planning too much into the future?</h4></label>
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-control" id="q9">
+						<option value="" hidden>Choose an option..</option>
+						<option value=1>1 (strongly disagree)</option>
+						<option value=2>2</option>
+						<option value=3>3</option>
+						<option value=4>4</option>
+						<option value=5>5 (strongly agree)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+			<button type="submit" class="btn btn-primary btn-lg btn-block submit"><i class="fa fa-check-square-o"></i> Submit</button>
+		</form>
+		<hr>
+		<div id="matchModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Your Match</h2>
+				</div>
+				<div class="modal-body" id="modalInfo"></div>
+			</div>
+		</div>
+		<footer>
+			<p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>
+		</footer>
 </div>
+
 
 </body>
 
 
 </html>
+
+<script type="text/javascript">
+	
+	$(".submit").on("click", function(event){
+		event.preventDefault();
+
+		
+		var newFriend = {
+			friendName: $("#name").val().trim(),
+			friendPhoto: $("#photo").val().trim(),
+			scores: [
+				$("#q1").val().trim(),
+				$("#q2").val().trim(),
+				$("#q3").val().trim(),
+				$("#q4").val().trim(),
+				$("#q5").val().trim(),
+				$("#q6").val().trim(),
+				$("#q7").val().trim(),
+				$("#q8").val().trim(),
+				$("#q9").val().trim()
+			]
+
+		};
+		console.log(newFriend);
+		var total2 = 0;
+		for(var i=0; i < newFriend.scores.length; i++){
+		var num = parseInt(newFriend.scores[i]);
+		console.log(num);
+		total2 = total2 + num;
+		console.log(total2);
+		}
+		function clearResults(){
+			$(".close").on("click", function(){
+				$("#matchModal").css("display", "none");
+				$("#modalInfo").empty();
+			});
+
+			
+			// $("#name").val() = "";
+			// $("#photo").val() = "";
+			// $("#q1").val() = "";
+			// $("#q2").val() = "";
+			// $("#q3").val() = "";
+			// $("#q4").val() = "";
+			// $("#q5").val() = "";
+			// $("#q6").val() = "";
+			// $("#q7").val() = "";
+			// $("#q8").val() = "";
+			// $("#q9").val() = "";
+		}
+		// function getInfo(){
+		// 	var match = $("<div>");
+		// 	match.addClass("modal-body");
+		// 	match.append("<p>" + data[i].friendName + "</p>");
+		// 	var photo = $("<img>");
+		// 	photo.attr("src", "'" + data.[i].friendPhoto + "'");
+		// 	match.append(photo);
+		// 	$("#modalInfo").append(match);
+		// }
+		// $.post("/api/friends", newFriend);
+
+		$.get("/api/friends", function(data){
+			var total1 = 0;
+			for(var i = 0; i < data.length; i++){
+
+				//console.log(data[i].friendName);
+				for(j in data[i].scores){
+					total1 += parseInt(data[i].scores[j]); 
+					console.log(total1);
+					// var difference = Math.abs(total1 - total2);
+					// console.log(difference);
+					}
+					var difference = Math.abs(total1 - total2);
+					console.log(difference);
+					if(difference <= 1){
+						console.log(data[i].friendName);
+						var photoLink = data[i].friendPhoto;
+						var match = $("<div>");
+						match.addClass("modal-body");
+						match.append("<p>" + data[i].friendName + "</p>");
+						var photo = $("<img>");
+						photo.attr("src", photoLink);
+						match.append(photo);
+						$("#modalInfo").append(match);
+						$("#matchModal").css("display", "block");
+						
+						clearResults();
+						//getInfo();
+						break;
+					}
+					total1 = 0;
+			}
+			
+		});
+	});
+
+	
+</script>
+

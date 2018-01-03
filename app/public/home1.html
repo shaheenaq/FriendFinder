@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friend App</title>
+	<link rel="stylesheet" type="text/css" href="./style1.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+	<div id="lights"></div>
+
+
+	
+		<div class="box main">
+			<h1>F<span id="d1">.</span>R<span id="d2">.</span>I<span id="d3">.</span>E<span id="d4">.</span>N<span id="d5">.</span>D FINDER</h1>
+			<p>Answer some questions and find your MATCH!</p>
+			<a href="/survey"><button class="button"><span>Survey</span></button></a>
+		</div>
+	</div>
+
+<footer><p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p></footer>
+
+	<script type="text/javascript">
+		for(var i = 0; i < 40; i++){
+			var bulb = document.createElement("div");
+			bulb.className = "bulb";
+			document.getElementById("lights").appendChild(bulb);
+		}
+	</script>
+</body>
+</html>
