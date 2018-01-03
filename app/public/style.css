@@ -5,7 +5,7 @@ body {
 .container {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border: 3px outset white;
+	border: outset 3px white;
 	padding: 0 20px 0 20px;
 }
 
@@ -50,9 +50,9 @@ h1{
 }
 
 .close {
-	color: #aaaaaa;
+	color: #2BA0FF;
 	float: right;
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: bold;
 }
 .close:hover,

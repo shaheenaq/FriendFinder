@@ -11,10 +11,10 @@
 
 </head>
 <body>
-	<div class="container" id="surveyContainer">
+	<div class="container">
 		<h1>Survey Questions</h1>
 		<hr>
-		<form role="form" id="surveyForm">
+		<form role="form">
 		<h3><strong>About You</strong></h3>
 		<div class="form-group">
 		<label for="name"><h4>Name (Required)</h4></label>
@@ -264,7 +264,7 @@
 					}
 					var difference = Math.abs(total1 - total2);
 					console.log(difference);
-					if(difference <= 1){
+					if(difference <= 2){
 						console.log(data[i].friendName);
 						var photoLink = data[i].friendPhoto;
 						var match = $("<div>");

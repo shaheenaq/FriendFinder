@@ -11,7 +11,7 @@ body {
 #lights {
 	text-align: center;
 	width: 100%;
-	border-top: 3px solid #666666;
+	border-top: solid 4px #666666;
 	padding: 0;
 	white-space: nowrap;
 	position: absolute;
