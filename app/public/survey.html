@@ -184,7 +184,7 @@
 			</div>
 		</div>
 		<footer>
-			<p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>
+			<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/shaheenaq/FriendFinder">GitHub Repo</a></p>
 		</footer>
 </div>
 
@@ -213,59 +213,34 @@
 			]
 
 		};
-		console.log(newFriend);
+		
 		var total2 = 0;
 		for(var i=0; i < newFriend.scores.length; i++){
 		var num = parseInt(newFriend.scores[i]);
-		console.log(num);
 		total2 = total2 + num;
-		console.log(total2);
+		
 		}
+
 		function clearResults(){
 			$(".close").on("click", function(){
 				$("#matchModal").css("display", "none");
 				$("#modalInfo").empty();
 			});
 
-			
-			// $("#name").val() = "";
-			// $("#photo").val() = "";
-			// $("#q1").val() = "";
-			// $("#q2").val() = "";
-			// $("#q3").val() = "";
-			// $("#q4").val() = "";
-			// $("#q5").val() = "";
-			// $("#q6").val() = "";
-			// $("#q7").val() = "";
-			// $("#q8").val() = "";
-			// $("#q9").val() = "";
 		}
-		// function getInfo(){
-		// 	var match = $("<div>");
-		// 	match.addClass("modal-body");
-		// 	match.append("<p>" + data[i].friendName + "</p>");
-		// 	var photo = $("<img>");
-		// 	photo.attr("src", "'" + data.[i].friendPhoto + "'");
-		// 	match.append(photo);
-		// 	$("#modalInfo").append(match);
-		// }
-		// $.post("/api/friends", newFriend);
 
 		$.get("/api/friends", function(data){
 			var total1 = 0;
 			for(var i = 0; i < data.length; i++){
 
-				//console.log(data[i].friendName);
 				for(j in data[i].scores){
 					total1 += parseInt(data[i].scores[j]); 
-					console.log(total1);
-					// var difference = Math.abs(total1 - total2);
-					// console.log(difference);
+					
 					}
 					var difference = Math.abs(total1 - total2);
-					console.log(difference);
-					if(difference <= 2){
-						console.log(data[i].friendName);
+					
+					if(difference <= 3){
+						
 						var photoLink = data[i].friendPhoto;
 						var match = $("<div>");
 						match.addClass("modal-body");
@@ -277,7 +252,7 @@
 						$("#matchModal").css("display", "block");
 						
 						clearResults();
-						//getInfo();
+						
 						break;
 					}
 					total1 = 0;

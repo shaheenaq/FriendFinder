@@ -2,18 +2,34 @@
 
 var friendsArray = [
 	{
+		friendName: "Dory",
+		friendPhoto: "http://cdn01.cdn.justjared.com/wp-content/uploads/headlines/2016/06/what-kind-of-fish-is-dory-blue-tangs-should-not-be-bought.jpg",
+		scores: [
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5
+		]
+	},
+
+	{
 		friendName: "Monica",
 		friendPhoto: "https://vignette.wikia.nocookie.net/friends/images/7/75/Monica.jpg/revision/latest?cb=20130802071219",
 		scores: [
 			5,
-			3,
-			5,
-			1,
-			4,
 			5,
 			5,
+			2,
 			5,
-			1
+			5,
+			5,
+			5,
+			2
 		]
 		
 	},
@@ -29,7 +45,7 @@ var friendsArray = [
 			3,
 			5,
 			5,
-			1
+			2
 		]
 	},
 	{
@@ -51,7 +67,7 @@ var friendsArray = [
 		friendName: "Chandler",
 		friendPhoto: "https://vignette.wikia.nocookie.net/p__/images/6/68/Chandler_Bing.jpeg/revision/latest/scale-to-width-down/350?cb=20160326092430&path-prefix=protagonist",
 		scores: [
-			1,
+			2,
 			4,
 			3,
 			3,
@@ -68,13 +84,13 @@ var friendsArray = [
 		scores: [
 			1,
 			1,
-			3,
-			5,
-			4,
-			5,
+			1,
 			4,
 			2,
-			4
+			4,
+			3,
+			1,
+			2
 		]
 	},
 	{
@@ -83,16 +99,31 @@ var friendsArray = [
 		scores: [
 			1,
 			1,
-			2,
+			1,
 			5,
 			5,
 			5,
-			5,
+			3,
 			1,
 			5
 		]
 	},
-
+	{
+		friendName: "Oscar the Grouch",
+		friendPhoto: "https://mcmprodaaas.s3.amazonaws.com/s3fs-public/styles/adaptive/public/blog_media/oscar-sesame-street-carousel_0.jpg?itok=hm_aQtBl",
+		scores: [
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1
+		]
+	}
 ];
 
 module.exports = friendsArray;
+
